@@ -1,20 +1,43 @@
 {
-  "name": "@ashiq72/say-hello",
+  "name": "bponi-phone-input",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/ashiq72/say_hello#readme",
+  "description": "A Vue 3 phone number input component with validation using libphonenumber-js",
+  "homepage": "https://github.com/ashiq72/bponi-phone-input#readme",
   "bugs": {
-    "url": "https://github.com/ashiq72/say_hello/issues"
+    "url": "https://github.com/ashiq72/bponi-phone-input/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ashiq72/say_hello.git"
+    "url": "git+https://github.com/ashiq72/bponi-phone-input.git"
   },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "license": "MIT",
+  "author": "Ashiq Ahmed",
+  "type": "module",
+  "main": "dist/vue-phone-input.umd.js",
+  "module": "dist/vue-phone-input.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-phone-input.es.js",
+      "require": "./dist/vue-phone-input.umd.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"No tests yet\""
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "dependencies": {
+    "libphonenumber-js": "^1.12.22"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
+    "vite": "^6.3.6"
   }
 }
