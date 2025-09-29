@@ -6,11 +6,11 @@ export default defineConfig({
   build: {
     lib: {
       entry: "src/index.js",
-      name: "VuePhoneInput",
-      fileName: (format) => `vue-phone-input.${format}.js`,
+      name: "VueSocialShare",
+      fileName: (format) => `vue-social-share.${format}.js`,
     },
     rollupOptions: {
-      external: ["vue", "libphonenumber-js"],
+      external: ["vue"],
       output: {
         globals: {
           vue: "Vue",

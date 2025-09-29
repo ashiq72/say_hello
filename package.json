@@ -1,21 +1,29 @@
 {
   "name": "vue-social-share-component",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "A simple Vue 3 social share button component",
   "main": "dist/vue-social-share.umd.js",
   "module": "dist/vue-social-share.es.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build"
   },
-  "keywords": ["vue", "share", "social", "component"],
+  "keywords": [
+    "vue",
+    "share",
+    "social",
+    "component"
+  ],
   "author": "Your Name",
   "license": "MIT",
   "peerDependencies": {
     "vue": "^3.0.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.4",
     "vite": "^5.0.0",
     "vue": "^3.0.0"
   }
